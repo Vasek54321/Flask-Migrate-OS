@@ -22,7 +22,6 @@ class Gender(Model):
     def __repr__(self):
         return self.name
 
-
 class Contact(Model):
     id = Column(Integer, primary_key=True)
     name = Column(String(150), unique=True, nullable=False)
